@@ -1,0 +1,46 @@
+<div style="bottom: 100px;" class="py-4">
+  <h2> Liste des taches</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Intitulé</th>
+    <th scope="col">Status</th>
+    <th scope="col">Priorité</th>
+    <th scope="col">Story Points</th>
+    <th scope="col">Responsable</th>
+    <th scope="col">Rapporteur</th>
+    <th scope="col">Description</th>
+    <th class="text-center"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let tache of listeTache; index as i">
+    <th scope="row">{{ tache.id  | number }}</th>
+    <td>{{ tache.intitule }}</td>
+    <td>{{ tache.status }}</td>
+    <td>{{ tache.priorite }}</td>
+    <td>{{ tache.storyPoint | number}}</td>
+    <td>{{ tache.responsable }}</td>
+    <td>{{ tache.rapporteur }}</td>
+    <td>{{ tache.description }}</td>
+    <td>
+      <span>
+        <button class="btn  btn-info" type="button"(click)="onEdit(tache)">Edit</button>
+      </span>
+    </td>
+    <td>
+      <span>
+        <button class="btn btn-danger" type="button" (click)="onRemove(i)">Remove</button>
+      </span>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<div>
+<span>
+       <button routerLink="/ajoutTache" type="button" class="btn btn-success float-right">Ajouter</button>
+  </span>
+</div>

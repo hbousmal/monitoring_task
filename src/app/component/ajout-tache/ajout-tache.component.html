@@ -1,0 +1,39 @@
+<div class="py-4">
+  <div class="row offset-md-2">
+    <h2 class="py-3"> Ajouter une tache </h2>
+  <label>
+    Intitulé: <input  type="text" class="form-control" size="100%" [(ngModel)]="tache.intitule" />
+  </label>
+
+  <label>
+    Status: <input type="text" class="form-control" size="100%" [(ngModel)]="tache.status" />
+  </label>
+
+  <label>
+    Priorité: <input type="text" class="form-control" size="100%" [(ngModel)]="tache.priorite" />
+  </label>
+
+  <label>
+    Story Point: <input type="number" class="form-control" size="100%" [(ngModel)]="tache.storyPoint" />
+  </label>
+
+  <label>
+    Responsable: <input type="text" class="form-control" size="100%" [(ngModel)]="tache.responsable" />
+  </label>
+
+  <label>
+    Rapporteur: <input type="text" class="form-control" size="100%" [(ngModel)]="tache.rapporteur" />
+  </label>
+
+  <label>
+    Description: <input type="text" class="form-control" size="100%" [(ngModel)]="tache.description" />
+  </label>
+  </div>
+
+    <div class="row offset-md-2">
+      <button (click)="retour()" class="btn btn-secondary">retour</button>
+      <button (click)="save()" class="btn btn-primary mx-2">save</button>
+    </div>
+
+
+</div>

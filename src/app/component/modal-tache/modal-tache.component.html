@@ -1,0 +1,38 @@
+<div class="modal-header">
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <label>
+    Intitulé: <input type="text" class="form-control" size="100%" [(ngModel)]="tache.intitule" />
+  </label>
+
+  <label>
+    Status: <input type="text" class="form-control" size="100%" [(ngModel)]="tache.status" />
+  </label>
+
+  <label>
+    Priorité: <input type="text" class="form-control" size="100%" [(ngModel)]="tache.priorite" />
+  </label>
+
+  <label>
+    Story Points: <input type="number" class="form-control" size="100%" [(ngModel)]="tache.storyPoint" />
+  </label>
+
+  <label>
+    Responsable: <input type="text" class="form-control" size="100%" [(ngModel)]="tache.responsable" />
+  </label>
+
+  <label>
+    Rapporteur: <input type="text" class="form-control" size="100%" [(ngModel)]="tache.rapporteur" />
+  </label>
+
+  <label>
+    Description: <input type="text" class="form-control" size="100%" [(ngModel)]="tache.description" />
+  </label>
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">save</button>
+</div>
