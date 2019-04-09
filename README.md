@@ -14,5 +14,5 @@
 2- Installation:
 
 - in the beginning you will need to run the command "npm install"
-- To launch the app: "ng serve -open"
+- To launch the app: "ng serve --open"
 
